@@ -180,4 +180,13 @@ weeks = years * 52
 
 print(f"You have {weeks} weeks left.")
 
+## ======== project 4 - Tip calculater
+bill = float(input())
+tip = float(input())
+No_of_Splits = float(input())
+
+final_amount = (bill / No_of_Splits) * tip
+
+print(round(final_amount, 2))
+
 
