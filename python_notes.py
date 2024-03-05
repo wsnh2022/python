@@ -181,12 +181,16 @@ weeks = years * 52
 print(f"You have {weeks} weeks left.")
 
 ## ======== project 4 - Tip calculater
-bill = float(input())
-tip = float(input())
-No_of_Splits = float(input())
+bill = float(input("what was the total bill? :"))
+tip = float(input("how much tip would you like to give? 10, 12, or 15 :")) / 100
+# print(tip)
+No_of_Splits = float(input("how many people to split the bill? :"))
 
-final_amount = (bill / No_of_Splits) * tip
+final_amount = (bill / No_of_Splits) * (tip + 1)
+rounded_amount = round(final_amount, 2) 
+rounded_amount = "{:.2f}".format(rounded_amount)
 
-print(round(final_amount, 2))
+print(f"Each person Should pay: {rounded_amount}")
+
 
 
