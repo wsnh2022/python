@@ -45,7 +45,7 @@ print(n1 * n2)
 practice finding string length using len function
 numOfLetters = len("Angela")
 print(numOfLetters)
-or
+# or
 print(len(input()))
 
 
@@ -100,13 +100,13 @@ print(int(two_digit_number[0]) + int(two_digit_number[1]))
 
 # Mathematical operations
 
-PEMDAS python order of priority is
-P_arentheses     : ()
-E_xponents       : **
-M_ultiplication  : *
-D_ivision        : /
-A_ddition        : +
-S_ubtraction     : -
+# PEMDAS python order of priority is
+# P_arentheses     : ()
+# E_xponents       : **
+# M_ultiplication  : *
+# D_ivision        : /
+# A_ddition        : +
+# S_ubtraction     : -
 
 # based on pemdas method natural output is 7.0
 print(3 * 3 + 3 / 3 - 3) 
@@ -119,7 +119,7 @@ formula is bmi = weight (kg) / height² (meter²)
 
 ### student workout Solution
 # ======== project 2 - BMI calculater
-1st input: enter height in meters e.g: 1.65
+# 1st input: enter height in meters e.g: 1.65
 height = input()
 # 2nd input: enter weight in kilograms e.g: 72
 weight = input()
