@@ -28,9 +28,6 @@ print("New lines can be created with a backslash and n.")
 print("hello " + input("what is your good name sir !!!\nplease type here:"))
 
 
-
-
-
 # ------------------------ lesson 3 --------------------------------------
 # ====== input function
 
@@ -43,10 +40,6 @@ n2 = int(input())
 print(n1 * n2)
 
 
-
-
-
-
 # ------------------------ lesson 4 --------------------------------------
 # ====== len function
 practice finding string length using len function
@@ -54,9 +47,6 @@ numOfLetters = len("Angela")
 print(numOfLetters)
 or
 print(len(input()))
-
-
-
 
 
 
@@ -96,7 +86,7 @@ print("your band name is " + city + " " + pet)
 ############## DAY 2 #################
 
 # ------------------------ lesson 5 --------------------------------------
-# lesson 5 ======= DATA TYPES
+# lesson 6 ======= DATA TYPES
 
 string, integer, float_num, booleantrue, booleanfalse = 'abc', 123_456_789, 1.23456, True, False  
 print(string, integer, float_num, booleantrue, booleanfalse)
@@ -108,7 +98,7 @@ two_digit_number = input() # input is 32
 print(type(two_digit_number)) # find the data type for testing purpose    
 print(int(two_digit_number[0]) + int(two_digit_number[1]))
 
-# lesson 5 ======= Mathematical operations
+# Mathematical operations
 
 PEMDAS python order of priority is
 P_arentheses     : ()
@@ -160,7 +150,7 @@ bmi_as_int = int(bmi)
 print(bmi_as_int)
 
 # ------------------------ lesson 6 --------------------------------------
-lesson 6 ======= number manupulation
+ number manupulation
 print(round(8/3)) # Round without decimal places
 print(round(8/3, 2)) # Round with 2 decimal places
 print(round(2.666666, 2)) # Round with 2 decimal places
@@ -169,9 +159,7 @@ floor division method - floating number output is 2
 print(8 // 3)
 
 # ======== project 3 - life in weeks
-
 ### student workout Solution
-
 age = input()
 # 🚨 Don't change the code above 👆
 # Write your code below this line 👇
