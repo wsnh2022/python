@@ -4,7 +4,7 @@
 2. [12+ Things I Regret Not Knowing Earlier About Python Lists](https://zlliu.medium.com/12-things-i-regret-not-knowing-earlier-about-python-lists-a71dd8a435e2)
 3. [7 Cool Python Tricks I Use In My Day-To-Day Programming](https://levelup.gitconnected.com/7-cool-python-tricks-i-use-in-my-day-to-day-programming-a4a99b62e2fa)
 4. [regex101](https://regex101.com/)
-5. []()
+5. [11 Beginner Tips for Learning Python Programming⭐](https://realpython.com/python-beginner-tips/#tip-1-code-everyday)
 6. []()
 7. []()
 8. []()
