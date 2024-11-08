@@ -415,4 +415,31 @@ def process_numbers(numbers: List[int]) -> Dict[str, float]:
 
 def get_user(user_id: int) -> Optional[Dict[str, Union[str, int]]]:
     # Could return None or a user dictionary
-    return {"name": "Alice", "id": user_i
+    return {"name": "Alice", "id": user_id}
+```
+
+</details>
+
+<details>
+<summary>16. Context Managers</summary>
+
+```python
+# Custom context manager
+class MyContextManager:
+    def __enter__(self):
+        print("Entering context")
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        print("Exiting context")
+
+# Using context manager
+with MyContextManager():
+    print("Inside context")
+
+# File handling with context
+with open('file.txt', 'w') as f1, open('other.txt', 'r') as f2:
+    f1.write(f2.read())
+```
+
+</details>
