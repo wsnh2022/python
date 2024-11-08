@@ -48,10 +48,10 @@ print(f"{name} is {age} years old.")  # Displays: Alice is 30 years old.
 
 ```python
 name = "Alice"                      # String
-age = 30                            # Integer
-height = 5.5                        # Float
-is_student = True                   # Boolean
-address = None                      # NoneType
+age = 30                           # Integer
+height = 5.5                       # Float
+is_student = True                  # Boolean
+address = None                     # NoneType
 ```
 
 ### Collections
