@@ -23,7 +23,7 @@
 </details>
 
 <details>
-<summary>1. Basic Syntax and Output</summary>
+<summary><H2>1. Basic Syntax and Output</H2></summary>
 
 ### Simple Output
 
@@ -42,7 +42,7 @@ print(f"{name} is {age} years old.")  # Displays: Alice is 30 years old.
 </details>
 
 <details>
-<summary>2. Variables and Data Types</summary>
+<summary><H2>2. Variables and Data Types</H2></summary>
 
 ### Variable Declarations
 
@@ -66,7 +66,7 @@ coordinates = (10.0, 20.0)                  # Tuple
 </details>
 
 <details>
-<summary>3. String Operations</summary>
+<summary><H2>3. String Operations</H2></summary>
 
 ### String Manipulation
 
@@ -85,7 +85,7 @@ print(message.strip())              # Displays: Hello, World!
 </details>
 
 <details>
-<summary>4. Collection Operations</summary>
+<summary><H2>4. Collection Operations</H2></summary>
 
 ### List Operations
 
@@ -114,7 +114,7 @@ print(unique_numbers)                # {2, 3, 4}
 </details>
 
 <details>
-<summary>5. Control Flow</summary>
+<summary><H2>5. Control Flow</H2></summary>
 
 ### Conditional Statements
 
@@ -157,7 +157,7 @@ while count < 5:
 </details>
 
 <details>
-<summary>6. Functions</summary>
+<summary><H2>6. Functions</H2></summary>
 
 ### Basic Function
 
@@ -181,7 +181,7 @@ print(greet_with_default("Bob"))     # Hello, Bob!
 </details>
 
 <details>
-<summary>7. Data Structures</summary>
+<summary><H2>7. Data Structures</H2></summary>
 
 ### Lists
 
@@ -210,7 +210,7 @@ print(point[0], point[1])            # 10 20
 </details>
 
 <details>
-<summary>8. Comprehensions</summary>
+<summary><H2>8. Comprehensions</H2></summary>
 
 ### List Comprehensions
 
@@ -229,7 +229,7 @@ print(squares)                        # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
 </details>
 
 <details>
-<summary>9. Higher-Order Functions</summary>
+<summary><H2>9. Higher-Order Functions</H2></summary>
 
 ### Lambda Functions
 
@@ -250,7 +250,7 @@ print(squared, even_numbers)          # [1, 4, 9, 16] [2, 4]
 </details>
 
 <details>
-<summary>10. Modules and Packages</summary>
+<summary><H2>10. Modules and Packages</H2></summary>
 
 ```python
 import math
@@ -260,7 +260,7 @@ print(math.sqrt(16), math.pi)         # 4.0 3.141592653589793
 </details>
 
 <details>
-<summary>11. Error Handling</summary>
+<summary><H2>11. Error Handling</H2></summary>
 
 ```python
 try:
@@ -272,7 +272,7 @@ except ZeroDivisionError:
 </details>
 
 <details>
-<summary>12. File Handling</summary>
+<summary><H2>12. File Handling</H2></summary>
 
 ```python
 # Writing to file
@@ -287,7 +287,7 @@ with open('example.txt', 'r') as file:
 </details>
 
 <details>
-<summary>13. Object-Oriented Programming (OOP)</summary>
+<summary><H2>13. Object-Oriented Programming (OOP)</H2></summary>
 
 ### Classes and Objects
 
@@ -318,7 +318,7 @@ print(my_puppy.name, my_puppy.breed)  # Max Beagle
 </details>
 
 <details>
-<summary>14. Additional Must-Learn Fundamentals</summary>
+<summary>14. Additional Must-Learn Fundamentals</H2></summary>
 
 <details>
 <summary>Enumerate</summary>
@@ -399,7 +399,7 @@ print(result)                        # ['123']
 </details>
 
 <details>
-<summary>15. Type Hints and Type Checking</summary>
+<summary><H2>15. Type Hints and Type Checking</H2></summary>
 
 ```python
 from typing import List, Dict, Optional, Union
@@ -421,7 +421,7 @@ def get_user(user_id: int) -> Optional[Dict[str, Union[str, int]]]:
 </details>
 
 <details>
-<summary>16. Context Managers</summary>
+<summary><H2>16. Context Managers</H2></summary>
 
 ```python
 # Custom context manager
