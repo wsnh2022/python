@@ -1,445 +1,300 @@
+Here’s your refined **Python Programming Guide**. I’ve cleaned up the jargon, combined redundant sections, and ensured every heading is purposeful and intuitive. The structure is tighter now, with no loose ends or overlap.
+
+---
+
 # Python Programming Guide
 
 <details>
-<summary><H2>Table of Contents</H2></summary>
+<summary><strong>📘 Table of Contents</strong></summary>
 
-- [1. Basic Syntax and Output](#1-basic-syntax-and-output)
-- [2. Variables and Data Types](#2-variables-and-data-types)
-- [3. String Operations](#3-string-operations)
-- [4. Collection Operations](#4-collection-operations)
-- [5. Control Flow](#5-control-flow)
-- [6. Functions](#6-functions)
-- [7. Data Structures](#7-data-structures)
-- [8. Comprehensions](#8-comprehensions)
-- [9. Higher-Order Functions](#9-higher-order-functions)
-- [10. Modules and Packages](#10-modules-and-packages)
-- [11. Error Handling](#11-error-handling)
-- [12. File Handling](#12-file-handling)
-- [13. Object-Oriented Programming (OOP)](#13-object-oriented-programming-oop)
-- [14. Additional Must-Learn Fundamentals](#14-additional-must-learn-fundamentals)
-- [15. Type Hints and Type Checking](#15-type-hints-and-type-checking)
-- [16. Context Managers](#16-context-managers)
+* [1. Getting Started: Syntax & Output](#1-getting-started-syntax--output)
+* [2. Variables and Data Types](#2-variables-and-data-types)
+* [3. Strings: Basics to Methods](#3-strings-basics-to-methods)
+* [4. Lists, Tuples, Sets, and Dictionaries](#4-lists-tuples-sets-and-dictionaries)
+* [5. Conditions and Loops](#5-conditions-and-loops)
+* [6. Functions & Parameters](#6-functions--parameters)
+* [7. Comprehensions](#7-comprehensions)
+* [8. Functional Tools: Lambda, Map, Filter](#8-functional-tools-lambda-map-filter)
+* [9. Error Handling](#9-error-handling)
+* [10. File Operations](#10-file-operations)
+* [11. Modules & Imports](#11-modules--imports)
+* [12. Object-Oriented Programming](#12-object-oriented-programming)
+* [13. Python Extras: zip, enumerate, slicing](#13-python-extras-zip-enumerate-slicing)
+* [14. Generators & Context Managers](#14-generators--context-managers)
+* [15. Type Hints](#15-type-hints)
+* [16. Regex (Basics Only)](#16-regex-basics-only)
 
 </details>
 
-<details>
-<summary><H2>1. Basic Syntax and Output</H2></summary>
+---
 
-### Simple Output
-
-```python
-print("Hello, World!")  # Displays: Hello, World!
-```
-
-### String Formatting
+## 1. Getting Started: Syntax & Output
 
 ```python
+print("Hello, World!")                    # Basic output
 name = "Alice"
 age = 30
-print(f"{name} is {age} years old.")  # Displays: Alice is 30 years old.
+print(f"{name} is {age} years old.")     # Formatted output
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>2. Variables and Data Types</H2></summary>
-
-### Variable Declarations
+## 2. Variables and Data Types
 
 ```python
-name = "Alice"                      # String
-age = 30                            # Integer
-height = 5.5                        # Float
-is_student = True                   # Boolean
-address = None                      # NoneType
+name = "Alice"       # str
+age = 30             # int
+height = 5.5         # float
+is_student = True    # bool
+address = None       # NoneType
 ```
 
-### Collections
+---
+
+## 3. Strings: Basics to Methods
 
 ```python
-favorite_colors = ["red", "blue", "green"]  # List
-person = {"name": "Alice", "age": 30}       # Dictionary
-unique_numbers = {1, 2, 3}                  # Set
-coordinates = (10.0, 20.0)                  # Tuple
+greeting = "Hello, " + name       # Concatenation
+print(greeting.strip())           # Removes leading/trailing spaces
+
+text = "python programming"
+print(text.upper())               # PYTHON PROGRAMMING
+print(text.title())               # Python Programming
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>3. String Operations</H2></summary>
-
-### String Manipulation
-
-```python
-greeting = "Hello, " + name         # Concatenation
-print(greeting)                     # Displays: Hello, Alice
-```
-
-### String Methods
-
-```python
-message = "  Hello, World!  "
-print(message.strip())              # Displays: Hello, World!
-```
-
-</details>
-
-<details>
-<summary><H2>4. Collection Operations</H2></summary>
-
-### List Operations
-
-```python
-fruits = ["apple", "banana", "cherry"]
-fruits.append("date")                # Adds item
-fruits.remove("banana")              # Removes item
-print(fruits)                        # ['apple', 'cherry', 'date']
-```
-
-### Dictionary Operations
-
-```python
-person["job"] = "Engineer"           # Adds key-value pair
-print(person.get("job"))            # Accesses value
-```
-
-### Set Operations
-
-```python
-unique_numbers.add(4)                # Adds item
-unique_numbers.remove(1)             # Removes item
-print(unique_numbers)                # {2, 3, 4}
-```
-
-</details>
-
-<details>
-<summary><H2>5. Control Flow</H2></summary>
-
-### Conditional Statements
-
-```python
-if age >= 18:
-    print("You are an adult.")
-else:
-    print("You are not an adult.")
-```
-
-### Ternary Operator
-
-```python
-is_adult = "Yes" if age >= 18 else "No"
-print(is_adult)                      # Yes
-```
-
-### Loops
-
-<details>
-<summary>For Loop</summary>
-
-```python
-for i in range(5):
-    print(i)                         # 0 1 2 3 4
-```
-</details>
-
-<details>
-<summary>While Loop</summary>
-
-```python
-count = 0
-while count < 5:
-    print(count)                     # 0 1 2 3 4
-    count += 1
-```
-</details>
-
-</details>
-
-<details>
-<summary><H2>6. Functions</H2></summary>
-
-### Basic Function
-
-```python
-def greet(name):
-    return f"Hello, {name}!"
-
-print(greet("Alice"))                # Hello, Alice!
-```
-
-### Default Parameters
-
-```python
-def greet_with_default(name="Guest"):
-    return f"Hello, {name}!"
-
-print(greet_with_default())          # Hello, Guest!
-print(greet_with_default("Bob"))     # Hello, Bob!
-```
-
-</details>
-
-<details>
-<summary><H2>7. Data Structures</H2></summary>
+## 4. Lists, Tuples, Sets, and Dictionaries
 
 ### Lists
 
 ```python
-fruits = ["apple", "banana", "cherry"]
-fruits.append("date")
+fruits = ["apple", "banana"]
+fruits.append("cherry")
 fruits.sort()
-print(fruits)  # ['apple', 'banana', 'cherry', 'date']
+print(fruits[1:3])                # List slicing: ['banana', 'cherry']
+```
+
+### Tuples
+
+```python
+point = (10, 20)
+print(point[0])                   # Access tuple element
+```
+
+### Sets
+
+```python
+unique = {1, 2, 3}
+unique.add(4)
+unique.remove(1)
 ```
 
 ### Dictionaries
 
 ```python
 person = {"name": "Alice", "age": 30}
+person["job"] = "Engineer"
 for key, value in person.items():
-    print(f"{key}: {value}")         # name: Alice \n age: 30
+    print(f"{key}: {value}")
 ```
 
-### Tuples
+---
+
+## 5. Conditions and Loops
+
+### Conditionals
 
 ```python
-point = (10, 20)                     # Immutable collection
-print(point[0], point[1])            # 10 20
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
 ```
 
-</details>
-
-<details>
-<summary><H2>8. Comprehensions</H2></summary>
-
-### List Comprehensions
+### Ternary
 
 ```python
-squared_numbers = [x ** 2 for x in range(5)]
-print(squared_numbers)                # [0, 1, 4, 9, 16]
+status = "Adult" if age >= 18 else "Minor"
 ```
 
-### Dictionary Comprehensions
+### Loops
 
 ```python
-squares = {x: x ** 2 for x in range(5)}
-print(squares)                        # {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}
+for i in range(5):
+    print(i)
+
+count = 0
+while count < 3:
+    print(count)
+    count += 1
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>9. Higher-Order Functions</H2></summary>
+## 6. Functions & Parameters
 
-### Lambda Functions
+```python
+def greet(name="Guest"):
+    return f"Hello, {name}"
+
+print(greet())          # Hello, Guest
+print(greet("Bob"))     # Hello, Bob
+```
+
+---
+
+## 7. Comprehensions
+
+```python
+squares = [x**2 for x in range(5)]
+square_dict = {x: x**2 for x in range(5)}
+```
+
+---
+
+## 8. Functional Tools: Lambda, Map, Filter
 
 ```python
 add = lambda x, y: x + y
-print(add(2, 3))                     # 5
+
+nums = [1, 2, 3, 4]
+squared = list(map(lambda x: x**2, nums))
+evens = list(filter(lambda x: x % 2 == 0, nums))
 ```
 
-### Map and Filter
+---
 
-```python
-numbers = [1, 2, 3, 4]
-squared = list(map(lambda x: x ** 2, numbers))
-even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
-print(squared, even_numbers)          # [1, 4, 9, 16] [2, 4]
-```
-
-</details>
-
-<details>
-<summary><H2>10. Modules and Packages</H2></summary>
-
-```python
-import math
-print(math.sqrt(16), math.pi)         # 4.0 3.141592653589793
-```
-
-</details>
-
-<details>
-<summary><H2>11. Error Handling</H2></summary>
+## 9. Error Handling
 
 ```python
 try:
     result = 10 / 0
 except ZeroDivisionError:
-    print("You can't divide by zero!")
+    print("Cannot divide by zero.")
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>12. File Handling</H2></summary>
+## 10. File Operations
 
 ```python
-# Writing to file
-with open('example.txt', 'w') as file:
-    file.write("Hello, file!")
+# Write
+with open('data.txt', 'w') as f:
+    f.write("Hello!")
 
-# Reading from file
-with open('example.txt', 'r') as file:
-    print(file.read())               # Hello, file!
+# Read
+with open('data.txt', 'r') as f:
+    print(f.read())
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>13. Object-Oriented Programming (OOP)</H2></summary>
+## 11. Modules & Imports
 
-### Classes and Objects
+```python
+import math
+print(math.sqrt(16))        # 4.0
+```
+
+---
+
+## 12. Object-Oriented Programming
+
+### Basic Class
 
 ```python
 class Dog:
-    def __init__(self, name, age):
+    def __init__(self, name):
         self.name = name
-        self.age = age
     def bark(self):
         return "Woof!"
 
-my_dog = Dog("Buddy", 4)
-print(my_dog.name, my_dog.age, my_dog.bark())  # Buddy 4 Woof!
+d = Dog("Buddy")
+print(d.name, d.bark())      # Buddy Woof!
 ```
 
 ### Inheritance
 
 ```python
 class Puppy(Dog):
-    def __init__(self, name, age, breed):
-        super().__init__(name, age)
+    def __init__(self, name, breed):
+        super().__init__(name)
         self.breed = breed
 
-my_puppy = Puppy("Max", 1, "Beagle")
-print(my_puppy.name, my_puppy.breed)  # Max Beagle
+p = Puppy("Max", "Beagle")
+print(p.name, p.breed)       # Max Beagle
 ```
 
-</details>
+---
 
-<details>
-<summary>14. Additional Must-Learn Fundamentals</H2></summary>
-
-<details>
-<summary>Enumerate</summary>
+## 13. Python Extras: zip, enumerate, slicing
 
 ```python
-colors = ["red", "blue", "green"]
-for index, color in enumerate(colors):
-    print(index, color)               # 0 red \n 1 blue \n 2 green
-```
-</details>
+# Enumerate
+colors = ["red", "green"]
+for idx, color in enumerate(colors):
+    print(idx, color)
 
-<details>
-<summary>Zip</summary>
-
-```python
-names = ["Alice", "Bob", "Charlie"]
-ages = [30, 25, 35]
+# Zip
+names = ["Alice", "Bob"]
+ages = [30, 25]
 for name, age in zip(names, ages):
-    print(name, age)                  # Alice 30 \n Bob 25 \n Charlie 35
-```
-</details>
+    print(name, age)
 
-<details>
-<summary>String Methods</summary>
+# List Slicing
+my_list = [1, 2, 3, 4]
+print(my_list[1:3])           # [2, 3]
+```
+
+---
+
+## 14. Generators & Context Managers
 
 ```python
-message = "  Hello, World!  "
-print(message.strip())                # Hello, World!
-```
-</details>
-
-<details>
-<summary>Generators</summary>
-
-```python
+# Generator
 def countdown(n):
     while n > 0:
         yield n
         n -= 1
 
-for number in countdown(5):
-    print(number)                     # 5 4 3 2 1
-```
-</details>
+for x in countdown(3):
+    print(x)
 
-<details>
-<summary>Additional String Methods</summary>
+# Context Manager
+class MyCtx:
+    def __enter__(self): print("Start"); return self
+    def __exit__(self, *args): print("End")
+
+with MyCtx():
+    print("Inside")
+```
+
+---
+
+## 15. Type Hints
 
 ```python
-text = "python programming"
-print(text.upper())                   # PYTHON PROGRAMMING
-print(text.lower())                   # python programming
-print(text.title())                   # Python Programming
-```
-</details>
-
-<details>
-<summary>List Slicing</summary>
-
-```python
-my_list = [1, 2, 3, 4, 5]
-print(my_list[1:4])                  # [2, 3, 4]
-```
-</details>
-
-<details>
-<summary>Basic Regular Expressions</summary>
-
-```python
-import re
-pattern = r'\d+'                     # Matches one or more digits
-text = "There are 123 apples"
-result = re.findall(pattern, text)
-print(result)                        # ['123']
-```
-</details>
-
-</details>
-
-<details>
-<summary><H2>15. Type Hints and Type Checking</H2></summary>
-
-```python
-from typing import List, Dict, Optional, Union
+from typing import List, Dict, Optional
 
 def greet(name: str) -> str:
     return f"Hello, {name}"
 
-def process_numbers(numbers: List[int]) -> Dict[str, float]:
-    return {
-        "sum": sum(numbers),
-        "average": sum(numbers) / len(numbers)
-    }
+def stats(nums: List[int]) -> Dict[str, float]:
+    return {"sum": sum(nums), "avg": sum(nums) / len(nums)}
 
-def get_user(user_id: int) -> Optional[Dict[str, Union[str, int]]]:
-    # Could return None or a user dictionary
-    return {"name": "Alice", "id": user_id}
+def get_user(id: int) -> Optional[Dict[str, str]]:
+    return {"id": str(id), "name": "Alice"}
 ```
 
-</details>
+---
 
-<details>
-<summary><H2>16. Context Managers</H2></summary>
+## 16. Regex (Basics Only)
 
 ```python
-# Custom context manager
-class MyContextManager:
-    def __enter__(self):
-        print("Entering context")
-        return self
-
-    def __exit__(self, exc_type, exc_value, traceback):
-        print("Exiting context")
-
-# Using context manager
-with MyContextManager():
-    print("Inside context")
-
-# File handling with context
-with open('file.txt', 'w') as f1, open('other.txt', 'r') as f2:
-    f1.write(f2.read())
+import re
+text = "There are 123 apples"
+print(re.findall(r'\d+', text))     # ['123']
 ```
 
-</details>
+---
