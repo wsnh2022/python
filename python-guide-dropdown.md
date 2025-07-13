@@ -1,7 +1,7 @@
 # Python Programming Guide
 
 <details>
-<summary>Table of Contents</summary>
+<summary><H2>Table of Contents</H2></summary>
 
 - [1. Basic Syntax and Output](#1-basic-syntax-and-output)
 - [2. Variables and Data Types](#2-variables-and-data-types)
