@@ -1,7 +1,6 @@
 # Python Programming Guide
 
-<details>
-<summary><strong>📘 Table of Contents</strong></summary>
+<strong>📘 Table of Contents</strong>
 
 * [1. Getting Started: Syntax & Output](#1-getting-started-syntax--output)
 * [2. Variables and Data Types](#2-variables-and-data-types)
@@ -20,8 +19,6 @@
 * [15. Type Hints](#15-type-hints)
 * [16. Regex (Basics Only)](#16-regex-basics-only)
 * [17. Good Practices Summary](#17-good-practices-summary)
-
-</details>
 
 ---
 
@@ -56,7 +53,9 @@ address = None       # NoneType
 
 ---
 
-## 3. Strings: Basics to Methods + helpful string methods for **cleaning and transforming messy text data**—a must-have skill for any data analyst or Python developer.
+## 3. Strings: Basics to Methods 
+
+### Useful string methods for **cleaning and transforming messy text data** a must-have skill for any data analyst or Python developer.
 
 **Use case:** You’ll often clean raw input—whether from a file, user form, or scraped web page. These methods help standardize, format, and clean that data.
 
