@@ -1,4 +1,4 @@
-# Python Programming Guide
+# Python Basics Guide
 
 <strong>📘 Table of Contents</strong>
 
